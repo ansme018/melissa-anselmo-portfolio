@@ -1,6 +1,14 @@
 
 /*Top Navigation Bar*/
 
+#header h1 {
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+}
+
 .top-navigation {
   background-color: white;
   position: fixed;
@@ -17,24 +25,23 @@
 .top-navigation li{
     list-style-type: none;
     display: inline;
-    font-size: 18px;
+    font-size: 1.2em;
     font-family: 'Titillium Web', sans-serif;
     padding: 0em 2em 0.5em 2em;
     text-transform: uppercase;
 }
 
 .top-navigation a {
-  color: #D4AF37;
+  color: #394545;
   text-decoration: none;
 }
 
-/* Name Heading */
+/*Heading My Name */
 
 .masthead-heading,
-.masthead-intro,
 .content-footer {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .masthead {
@@ -43,14 +50,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-top: solid 1em #D3D3D3;
-}
-
-.masthead-intro {
-  color: white;
-  margin-bottom: 0.1em;
-  font-family: 'Raleway', sans-serif;
-  font-size: 2em;
-  line-height: 50%;
+  height: 15em;
 }
 
 .masthead-heading {
@@ -61,19 +61,9 @@
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #000, 3px 3px 5px white;
   font-size: 6em;
-  line-height: 50%;
-}
-@media only screen and (max-width: 600px) { 
-  .masthead {
-    padding: 3em 0;
-}
-  .masthead-heading {
-        font-size: 3em;
-    }
 }
 
-/* About Me Section*/
-
+/* Sections*/
 .section-projects,
 .section-introduction,
 .section-funfacts, {
@@ -84,13 +74,9 @@
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.0em;
   margin-bottom: 4em;
+  margin-top: 2em;
 }
 
-.section-introduction{
-  max-width: 45em;
-  margin-right: auto;
-  margin-left: auto;
-}
 .section-introduction h1,
 .section-funfacts h1,
 .section-projects h1 {
@@ -102,12 +88,20 @@
   margin-right: auto;
 }
 
-.section-introduction p { 
+.section-introduction {
   max-width: 45em;
   margin-right: auto;
   margin-left: auto;
+}
+
+.section-introduction p {
+  font-size: 1.2em;
+  max-width: 45em;
   font-family: 'Titillium Web', sans-serif;
-  max-width: 45em; }
+  margin-right: auto;
+ margin-left: auto;
+}
+
 
 .section-funfacts {
   max-width: 45em;
@@ -115,7 +109,7 @@
   margin-left: auto;
 }
 
-.introduction-section > p,
+.section-introduction > p
 .section-funfacts > p,
 .content-footer > p {
   font-weight: 300;
@@ -124,7 +118,7 @@
 }
 
 .section-funfacts li {
-    font-size: 18px;
+    font-size: 1.2em;
     font-family: 'Titillium Web', sans-serif;
     padding: 0.5em;
     text-transform: lowercase;
@@ -139,6 +133,7 @@
 
 h3 {
   font-family: 'Titillium Web', sans-serif;
+  text-align: center;
 }
 .section-projects {
   overflow: auto;
@@ -162,17 +157,6 @@ h3 {
   float: right;
 }
 /*Footer */
-
-@media only screen and (max-width: 600px) { 
-  .footer {
-    padding: 3em 0;
-}
-  .footer {
-        font-size: 2em;
-    }
- 
-}
-
 .content-footer {
   list-style-type: none;
   background-color: grey;
@@ -183,6 +167,7 @@ h3 {
   overflow: auto;
 }
 
+/*Footer Links */
 .social > li {
   display: inline;
   padding: 1.5em;
@@ -191,19 +176,60 @@ h3 {
 
 .social > li a,
 nav a:visited {
-  color: #24451D;
+  color: #394545;
   text-decoration: none;
 }
 
 .social > li a:hover {
-  color: orange;
+  color: #A6C0C5;
 }
 
 .content-footer > p a {
-  color: #24451D;
+  color: #394545;
   text-decoration: none;
 }
 
 .content-footer > p a:hover {
-  color: orange;
+  color: #A6C0C5;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 600px) { 
+  .top-navigation {
+        font-size: 0.75em;
+    }
+.section-projects img {
+  height: 10em;
+  width: 13em;
+}
+
+@media only screen and (max-width: 700px) { 
+  .top-navigation, 
+  .section-introduction,
+  .section-funfacts,
+  .section-projects {
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px
+}
+}
+
+@media only screen and (max-width: 600px) { 
+  .masthead {
+    padding: 3em 0;
+}
+  .masthead-heading {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+  .footer {
+    padding: 3em 0;
+}
+  .footer {
+        font-size: 2em;
+    }
+ 
 }
