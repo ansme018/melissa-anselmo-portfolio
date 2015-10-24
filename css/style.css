@@ -1,0 +1,162 @@
+/*Top Navigation Bar*/
+
+.top-navigation {
+  background-color: #D3D3D3;
+  position: fixed;
+  width: 100%;
+}
+
+.top-navigation ul {
+  padding: 1em 1em 1em 1em;
+  margin: auto 0;
+  text-align: center;
+}
+
+.top-navigation li{
+    list-style-type: none;
+    display: inline;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0.5em 2em 0.5em 2em;
+    text-transform: uppercase;
+}
+
+.top-navigation a {
+  color: #D4AF37;
+  text-decoration: none;
+}
+
+/* Name Heading */
+
+.masthead-heading,
+.masthead-intro,
+.content-footer {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.masthead {
+  padding: 6em;
+  background: url(https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?q=80&fm=jpg&s=643e44f5177366de6cc914c8bcfbe064) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #D3D3D3;
+}
+
+.masthead-intro {
+  color: white;
+  margin-bottom: 0.1em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  line-height: 50%;
+}
+
+.masthead-heading {
+  margin-top: -0.2em #D3D3D3;
+  color: #394545;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #000, 3px 3px 5px white;
+  font-size: 6em;
+  line-height: 50%;
+}
+@media only screen and (max-width: 600px) { 
+  .masthead {
+    padding: 3em 0;
+}
+  .masthead-heading {
+        font-size: 3em;
+    }
+}
+
+/* About Me Section*/
+
+.section-projects,
+.section-introduction,
+.section-location, {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.0em;
+  margin-bottom: 4em;
+}
+
+.section-projects h1,
+.section-introduction h1,
+.section-location h1 {
+  font-weight: bold;
+  font-size: 2.0em;
+}
+
+.section-questions h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #6a6d6a;
+  line-height: 100%
+}
+
+.introduction-section > p,
+.location-section > p,
+.content-footer > p {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 50%;
+}
+
+.section-location li {
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0.5em;
+    text-transform: lowercase;
+}
+/* Projects */
+
+
+/*Footer */
+
+@media only screen and (max-width: 600px) { 
+  .footer {
+    padding: 3em 0;
+}
+  .footer {
+        font-size: 2em;
+    }
+ 
+}
+
+.content-footer {
+  list-style-type: none;
+  background-color: grey;
+  padding: 2em;
+  color: white;
+  font-size: 1.0em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.social > li {
+  display: inline;
+  padding: 1.5em;
+  font-size: 1.5em;
+}
+
+.social > li a,
+nav a:visited {
+  color: #24451D;
+  text-decoration: none;
+}
+
+.social > li a:hover {
+  color: orange;
+}
+
+.content-footer > p a {
+  color: #24451D;
+  text-decoration: none;
+}
+
+.content-footer > p a:hover {
+  color: orange;
+}
