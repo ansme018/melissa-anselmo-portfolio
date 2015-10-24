@@ -1,14 +1,16 @@
+
 /*Top Navigation Bar*/
 
 .top-navigation {
-  background-color: #D3D3D3;
+  background-color: white;
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 
 .top-navigation ul {
   padding: 1em 1em 1em 1em;
-  margin: auto 0;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -17,7 +19,7 @@
     display: inline;
     font-size: 18px;
     font-family: 'Titillium Web', sans-serif;
-    padding: 0.5em 2em 0.5em 2em;
+    padding: 0em 2em 0.5em 2em;
     text-transform: uppercase;
 }
 
@@ -74,8 +76,8 @@
 
 .section-projects,
 .section-introduction,
-.section-location, {
-  max-width: 38em;
+.section-funfacts, {
+  max-width: 45em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
@@ -84,29 +86,44 @@
   margin-bottom: 4em;
 }
 
-.section-projects h1,
+.section-introduction{
+  max-width: 45em;
+  margin-right: auto;
+  margin-left: auto;
+}
 .section-introduction h1,
-.section-location h1 {
+.section-funfacts h1,
+.section-projects h1 {
   font-weight: bold;
   font-size: 2.0em;
+  font-family: 'Titillium Web', sans-serif;
+  max-width: 45em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.section-questions h2 {
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #6a6d6a;
-  line-height: 100%
+.section-introduction p { 
+  max-width: 45em;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Titillium Web', sans-serif;
+  max-width: 45em; }
+
+.section-funfacts {
+  max-width: 45em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .introduction-section > p,
-.location-section > p,
+.section-funfacts > p,
 .content-footer > p {
   font-weight: 300;
   letter-spacing: 0.05em;
   line-height: 50%;
 }
 
-.section-location li {
+.section-funfacts li {
     font-size: 18px;
     font-family: 'Titillium Web', sans-serif;
     padding: 0.5em;
@@ -114,7 +131,36 @@
 }
 /* Projects */
 
+.section-projects {
+  max-width: 45em;
+  margin-left: auto;
+  margin-right: auto
+}
 
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+}
+.section-projects {
+  overflow: auto;
+}
+
+.section-projects img {
+  height: 15em;
+  width: 20em;
+  padding: 0 10px 0 10px;
+}
+
+.NYT, 
+.KarmaPage {
+  width: 46.5%;
+}
+.NYT {
+  float: left;
+}
+
+.KarmaPage {
+  float: right;
+}
 /*Footer */
 
 @media only screen and (max-width: 600px) { 
@@ -133,7 +179,8 @@
   padding: 2em;
   color: white;
   font-size: 1.0em;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  overflow: auto;
 }
 
 .social > li {
